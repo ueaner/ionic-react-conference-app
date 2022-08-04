@@ -1,0 +1,13 @@
+#upgrade: true
+#packageManager: pnpm
+#dep: dev,prod
+target: minor # only update patch and minor
+#reject:
+# ionic v6 基于 react v5
+#- 'react-router'     # ^5.0.1  →   ^6.3.0
+#- 'react-router-dom' # ^5.0.1  →   ^6.3.0
+# 生态还没有跟上 react v18，暂时不更新到 v18
+#- 'react'            # 17.0.2  → 18.0.0 TODO
+#- 'react-dom'        # 17.0.2  → 18.0.0 TODO
+#- '@types/react'     # 17.0.44 → 18.0.0 TODO
+#- '@types/react-dom' # 17.0.15 → 18.0.0 TODO
